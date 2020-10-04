@@ -20,6 +20,10 @@
                         <option>Programiranje</option>
                         <option>Matematika</option>
                         <option>Fizika</option>
+                        <option>Biologija</option>
+                        <option>Geografija</option>
+                        <option>Hrvatski jezik</option>
+                        <option>Engleski jezik</option>
                         <option>Ostalo</option>
                     </select>
                 </div>

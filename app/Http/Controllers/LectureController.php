@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Lecture;
 use Illuminate\Http\Request;
+use DB;
 
 class LectureController extends Controller
 {
@@ -13,16 +14,16 @@ class LectureController extends Controller
     }
 
     public function index(Request $request)
-    {
-        // $lectures =  Lecture::all();
+   {
+       // $lectures = DB::table('lectures')->paginate(5);
 
         $topic = $request->query('topic');
 
-        if ($topic) {
+       if ($topic) {
             $lectures = Lecture::where('topic', $topic)->get();
-        } else {
+       } else {
             $lectures = Lecture::orderBy('name')->get();
-        }
+       }
 
 
         return view('lectures.index', ['lectures' => $lectures]);

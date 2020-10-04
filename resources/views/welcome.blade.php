@@ -18,11 +18,9 @@
     @endif --}}
 
     <div class="container">
-        <h1 class="text-center">Aplikacija za izradu online lekcija</h1>
+        
         <div class="row d-flex justify-content-center">
-           <div>
-                <img src="img/fpmoz_logo.png" alt="">
-            </div>
+            
         </div>
         <div class="row d-flex justify-content-center">
             <!-- <div>

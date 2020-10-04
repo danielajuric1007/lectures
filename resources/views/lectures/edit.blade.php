@@ -18,19 +18,24 @@
                 <div class="form-group">
                     <label for="topic">Tema</label>
                     <select class="form-control" id="topic" name="topic" value="{{$lecture->topic}}">
-                        <option>Programiranje</option>
-                        <option>Matematika</option>
-                        <option>Fizika</option>
+                    <option>Programiranje</option>
+                    <option>Matematika</option>
+                    <option>Fizika</option>
+                    <option>Biologija</option>
+                    <option>Geografija</option>
+                    <option>Hrvatski jezik</option>
+                    <option>Engleski jezik</option>
+                    <option>Ostalo</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="description">Tekst</label>
-                    <textarea class="form-control" id="description" rows="3" name="description" value="{{$lecture->description}}"></textarea>
+                    <textarea class="form-control" id="description" rows="3" name="description" value=<?php echo ($lecture->description);?>></textarea>
                 </div>
                 <div>
                     <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                 </div>
-                <button type="submit" class="btn btn-primary">Dodaj</button>
+                <button type="submit" class="btn btn-primary">Spremi</button>
             </form>
         </div>
 
